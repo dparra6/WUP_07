@@ -74,6 +74,8 @@ basicCC + geom_bar(stat="identity", position = "dodge")
 
 We can see this chart is the same as the one above, although this one is more clear and we can see what is exact. 
 
+The bars show what we had predicted before, where the females are higher than the males on being alive, and males are higher than females on how many died. 
+
 
 
 
@@ -86,6 +88,12 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+The two results are shown above with a percentage and one for the full numbers out of 100.
+
+For the percentage above we can see that only 1.4% have died to covid-19  in the female side leaving us with only 98.7% females alive. Going into more detail we can see out of 100, 56 females are alive and only 36 have died. 
+
+In the males percentage we can see that only 3.0% have died which makes the bar charts correct, and leaves that with 97.0% males that are alive. Going into more detail for the males out of 100 we can see that 64 males have died and only 44 are alive which is a huge difference. 
+
 ## Inferential results 
 
 ```{r}
@@ -94,6 +102,10 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+Since the p-value is 0.0012 since the p-value is so small we can reject this hypothesis because it is more unlikely to occur, due to us using sex as something that affects this virus. We have to reject this because the null hypothesis that death is independent of sex is rejected in favor of the alternative, that sex plays a role in death.
 
 ## Conclusions
 
+We first started off by using both barcharts to determine between percentages, and out of 100. We can determine that the males had the most impact during this because they had more deaths than the females, and the females had the less deaths. 
+
+In the end we had to reject this hypothesis and have it as an alternative because we used sex which doesn't play an actual role for death. 
